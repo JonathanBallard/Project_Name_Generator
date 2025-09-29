@@ -1,10 +1,9 @@
 
 
-
 # List of Categories for Project Name Generator
-# 
+
+
 # Current Categories:
-# 
 #& Created by Me 
 # metals
 # roman_gear
@@ -17,7 +16,7 @@
 #& ChatGPT Created 
 # medieval_melee_weapons
 # birds_of_prey
-# norse_gods
+# norse_mythology
 # norse_creatures
 # large_cats
 # german_rivers
@@ -30,13 +29,20 @@
 # gemstones
 # trees
 # norse_names
+# ancient_battles
+# medieval_battles
+# 
 # random
 # 
 
+import random
 
 
-#~ Metals
-metals = [
+
+
+
+#~ Expanded Metals (NOT IN USE)
+expanded_metals = [
     'Gold',
     'Silver',
     'Platinum',
@@ -89,6 +95,42 @@ metals = [
     'Neptunium',
     'Nobelium',
 ]
+
+#~ Metals
+metals = [
+    'Gold',
+    'Silver',
+    'Platinum',
+    'Bronze',
+    'Brass',
+    'Chromium',
+    'Iron',
+    'Steel',
+    'Tungsten',
+    'Aluminium',
+    'Copper',
+    'Tin',
+    'Nickel',
+    'Lead',
+    'Zinc',
+    'Titanium',
+    'Vanadium',
+    'Cobalt',
+    'Rubidium',
+    'Cadmium',
+    'Beryllium',
+    'Francium',
+    'Rhodium',
+    'Uranium',
+    'Yttrium',
+    'Mercury',
+    'Tantalum',
+    'Magnesium',
+    'Gallium',
+    'Lanthanum',
+    'Neptunium',
+]
+
 
 #~ Roman Gear
 roman_gear = [
@@ -166,8 +208,6 @@ famous_romans = [
     'Acer',
     'Adiutor',
     'Arator',
-    '',
-    '',
 ]
 
 #~ Arthurian Knights
@@ -330,7 +370,6 @@ colors = [
     'Chiffon',
     'Goldenrod',
     'Papaya',
-    'Moccasin',
     'Khaki',
     'Lavender',
     'Thistle',
@@ -345,7 +384,6 @@ colors = [
     'Yellow',
     'Chartreuse',
     'Lime',
-    'Spring',
     'Sea',
     'Olive',
     'Drab',
@@ -359,26 +397,20 @@ colors = [
     'Powder',
     'Sky',
     'Deepsky',
-    'Dodger',
     'Cornflower',
     'Royal',
     'Navy',
     'Midnight',
     'Cornsilk',
     'Almond',
-    'Bisque',
-    'Navajo',
     'Wheat',
-    'Burly',
     'Tan',
     'Rosy',
     'Sandy',
-    'Peru',
     'Chocolate',
     'Saddle',
     'Sienna',
     'Maroon',
-    'Brown',
     'White',
     'Snow',
     'Honeydew',
@@ -398,7 +430,6 @@ colors = [
     'Lavender',
     'Blush',
     'Misty',
-    'Gainsboro',
     'Gray',
     'Silver',
     'Dim',
@@ -426,13 +457,10 @@ medieval_melee_weapons = [
 birds_of_prey = [
     "Eagle", "Falcon", "Hawk", "Buzzard", "Osprey", "Harrier", "Kite",
     "Goshawk", "Sparrowhawk", "Merlin", "Peregrine", "Kestrel", "Caracara",
-    "Condor", "Vulture", "Griffon", "Eagleowl", "Barnowl", "Screechowl",
-    "Snowyowl", "Tawnyowl", "Gyrfalcon", "Hobby", "Bateleur", "Serpent",
-    "Chantinggoshawk", "Roadsidehawk", "Marshharrier", "Blackkite", "Steppeagle",
-    "Fishowl", "Buzzardhawk", "Lanner", "Saker", "Laggar", "Redkite",
-    "Blackeagle", "Bootedeagle", "Shorttoed", "Bonelliseagle", "Tawnyeagle",
-    "Lesserkestrel", "Greaterkestrel", "Forestfalcon", "Whitehawk", "Zonehawk",
-    "Roughlegged", "Longleggedbuzzard", "Beardedvulture", "Palmnutvulture"
+    "Condor", "Griffon", "Eagle-owl", "Barn-owl", "Screech-owl",
+    "Snowy-owl", "Tawny-owl", "Gyrfalcon", "Hobby", "Bateleur", "Serpent",
+    "Marsh-harrier", "Black-kite", "Lanner", "Saker", "Laggar", "Redkite",
+    "Forest falcon", "Zonehawk",
 ]
 
 # Norse gods
@@ -464,7 +492,7 @@ norse_creatures = [
 # Large cats
 large_cats = [
     "Lion", "Tiger", "Jaguar", "Puma", "Cougar", "Leopard", "Cheetah",
-    "Lynx", "Ocelot", "Caracal", "Serval", "Bobcat", "Snowleopard",
+    "Lynx", "Ocelot", "Caracal", "Serval", "Bobcat", "Snow Leopard",
     "Clouded Leopard", "Panther", "Smilodon", "Bengal Tiger",
     "Siberian Tiger", "Mountain Lion", "Oncilla", "Kodkod", 
     "Geoffroy", "Margay", "Pallascat", "Leopardcat", "Andino", 
@@ -487,11 +515,10 @@ german_rivers = [
 cute_animals = [
     "Kitten", "Bunny", "Hedgehog", "Hamster", "Chinchilla", "Ferret",
     "Guineapig", "Parakeet", "Parrot", "Duckling", "Gosling", "Foal",
-    "Piglet", "Calf", "Lamb", "Fawn", "Otter", "Meerkat", "Sloth",
-    "Koala", "Panda", "Redpanda", "Squirrel", "Chipmunk", "Alpaca",
-    "Gecko", "Sealpup", "Penguin", "Seaotter", "Loris",
-    "Kinkajou", "Sugarglider", "Echidna", "Platypus", "Hedgie",
-    "Quokka", "Pika", "Manatee", "Lemur", "Mouse", "Rat", "Lovebird",
+    "Piglet", "Calf", "Lamb", "Fawn", "Otter", "Meerkat",
+    "Koala", "Panda", "Squirrel", "Chipmunk", "Alpaca",
+    "Penguin", "Seaotter", "Kinkajou", "Sugarglider", "Echidna", 
+    "Platypus", "Hedgie", "Quokka", "Pika", "Manatee", "Lemur", "Mouse", 
     "Cockatiel", "Foalhorse", "Otterpup", "Cub", "Koalajoey"
 ]
 
@@ -550,12 +577,12 @@ magical_elements = [
 castle_parts = [
     "Keep", "Moat", "Drawbridge", "Battlement", "Dungeon", "Gatehouse",
     "Tower", "Turret", "Bailey", "Curtainwall", "Barbican", "Portcullis",
-    "Donjon", "GreatHall", "Chapel", "Kitchen", "Courtyard", "Well",
+    "GreatHall", "Chapel", "Kitchen", "Courtyard", "Well",
     "Armory", "Barracks", "Stables", "Guardroom", "Watchtower", "Bridge",
     "Chamber", "Solar", "Cistern", "Parapet", "Rampart", "Wallwalk",
-    "Vault", "Crypt", "Cellar", "Hall", "KitchenGarden", "Chamberlain",
+    "Vault", "Crypt", "Cellar", "Hall", "Garden",
     "Gallery", "Gate", "Postern", "Palisade", "Outwork", "Ward", "Yard",
-    "TortureChamber", "Prison", "Chamberpot", "Arrowslit", "GatehouseTower"
+    "Arrowslit", "Gatehouse Tower"
 ]
 
 # Gemstones
@@ -594,7 +621,7 @@ norse_names = [
 ]
 
 # Random (Heraldic Animals)
-random = [
+heraldic_animals = [
     "Lion", "Eagle", "Bear", "Wolf", "Stag", "Boar", "Dragon", "Griffin",
     "Leopard", "Tiger", "Hound", "Unicorn", "Falcon", "Hawk", "Bull",
     "Horse", "Panther", "Serpent", "Ram", "Goat", "Phoenix", "Swan",
@@ -605,17 +632,82 @@ random = [
 ]
 
 
+ancient_battles = [
+    "Megiddo",       # 15th c. BCE, Egypt vs Canaan
+    "Kadesh",        # 1274 BCE, Egypt vs Hittites
+    "Marathon",      # 490 BCE, Greeks vs Persians
+    "Thermopylae",   # 480 BCE, Spartans vs Persians
+    "Salamis",       # 480 BCE, Greeks vs Persians
+    "Plataea",       # 479 BCE, Greeks vs Persians
+    "Mycale",        # 479 BCE, Greeks vs Persians
+    "Leuctra",       # 371 BCE, Thebes vs Sparta
+    "Chaeronea",     # 338 BCE, Philip II vs Greek states
+    "Issus",         # 333 BCE, Alexander vs Darius III
+    "Gaugamela",     # 331 BCE, Alexander vs Persians
+    "Hydaspes",      # 326 BCE, Alexander vs King Porus
+    "Zama",          # 202 BCE, Rome vs Carthage
+    "Cannae",        # 216 BCE, Hannibal vs Rome
+    "Trebia",        # 218 BCE, Hannibal vs Rome
+    "Lake Trasimene",# 217 BCE, Hannibal vs Rome
+    "Carrhae",       # 53 BCE, Rome vs Parthia
+    "Actium",        # 31 BCE, Octavian vs Antony & Cleopatra
+    "Alesia",        # 52 BCE, Caesar vs Vercingetorix
+    "Pharsalus",     # 48 BCE, Caesar vs Pompey
+    "Philippi",      # 42 BCE, Triumvirs vs Caesar’s assassins
+    "Teutoburg Forest", # 9 CE, Germanic tribes vs Rome
+    "Watling Street",   # 60 CE, Boudica vs Rome
+    "Mons Graupius",    # 83 CE, Romans vs Caledonians
+    "Adrianople",    # 378 CE, Goths vs Rome
+    "Chalons",       # 451 CE, Romans & allies vs Attila
+    "Catalaunian Plains", # 451 CE, same as above
+    "Tours",         # 732 CE, Franks vs Umayyads (slightly later)
+    "Stamford Bridge",  # 1066 CE, still “medieval famous”
+]
 
 
+medieval_battles = [
+    "Tours",             # 732, Franks vs Umayyads
+    "Roncevaux Pass",    # 778, Franks vs Basques
+    "Edington",          # 878, Alfred the Great vs Danes
+    "Hastings",          # 1066, William the Conqueror vs Harold II
+    "Manzikert",         # 1071, Byzantines vs Seljuk Turks
+    "Hattin",            # 1187, Saladin vs Crusaders
+    "Arsuf",             # 1191, Richard I vs Saladin
+    "Bouvines",          # 1214, France vs Holy Roman Empire
+    "Las Navas de Tolosa", # 1212, Reconquista
+    "Legnica",           # 1241, Mongols vs Poland
+    "Mohi",              # 1241, Mongols vs Hungary
+    "Ain Jalut",         # 1260, Mamluks vs Mongols
+    "Stirling Bridge",   # 1297, Scots vs England
+    "Falkirk",           # 1298, Edward I vs Scots
+    "Bannockburn",       # 1314, Robert the Bruce vs Edward II
+    "Crécy",             # 1346, England vs France
+    "Poitiers",          # 1356, England vs France
+    "Nicopolis",         # 1396, Ottomans vs Crusaders
+    "Grunwald",          # 1410, Poland-Lithuania vs Teutonic Order
+    "Agincourt",         # 1415, Henry V vs France
+    "Tannenberg",        # 1410, another name for Grunwald
+    "Varna",             # 1444, Ottomans vs Crusaders
+    "Constantinople",      # 1453, Ottomans vs Byzantines
+    "Towton",            # 1461, Wars of the Roses
+    "Barnet",            # 1471, Wars of the Roses
+    "Bosworth Field",    # 1485, Wars of the Roses
+    "Fornovo",           # 1495, France vs Holy League
+    "Novara",            # 1513, Swiss vs France (slightly post-medieval)
+    "Pavia",             # 1525, France vs Spain (early Renaissance)
+]
 
 
-
-
-
-
-
-
-
+planets = [
+    # Major planets
+    "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune",
+    
+    # Dwarf planets
+    "Pluto", "Ceres", "Eris", "Haumea", "Makemake",
+    
+    # Notable moons sometimes treated planet-like in myth/literature
+    "Ganymede", "Titan", "Europa", "Callisto", "Enceladus", "Io",
+]
 
 
 
@@ -629,8 +721,6 @@ roman_ranks = list(set(roman_ranks))
 famous_romans = list(set(famous_romans))
 arthurian_knights = list(set(arthurian_knights))
 colors = list(set(colors))
-
-
 
 
 medieval_melee_weapons = list(set(medieval_melee_weapons))
@@ -650,8 +740,13 @@ castle_parts = list(set(castle_parts))
 gemstones = list(set(gemstones))
 trees = list(set(trees))
 norse_names = list(set(norse_names))
-random = list(set(random))
+heraldic_animals = list(set(heraldic_animals))
 
+ancient_battles = list(set(ancient_battles))
+medieval_battles = list(set(medieval_battles))
+planets = list(set(planets))
+
+# random_category = select_random_category()
 
 
 
