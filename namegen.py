@@ -10,6 +10,9 @@
 # Modal pops up with name
 # Change colors and fonts
 # Adjust window size
+# Lock certain choices in
+# Fix column for category 1 (num categories label too big)
+
 
 
 import tkinter as tk

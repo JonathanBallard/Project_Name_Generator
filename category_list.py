@@ -450,7 +450,7 @@ medieval_melee_weapons = [
     "Cutlass", "Saber", "Katana", "Naginata", "Club", "Staff", "Trident",
     "Javelin", "Spatha", "Gladius", "Kris", "Kukri", "Yatagan", "Cudgel",
     "Shamsir", "Spetum", "Ranseur", "Macuahuitl", "Kopis", "Xiphos",
-    "Parazonium", "Cinquedea", "Messer", "Seax", "Dao", "Tanto", "Kanabo"
+    "Parazonium", "Cinquedea", "Messer", "Seax", "Tanto", 
 ]
 
 # Birds of prey
@@ -477,8 +477,7 @@ norse_mythology = [
     "Jotunheim", "Vanaheim", "Nidavellir", "Helheim", "Muspelheim", "Niflheim", 
     "Bifrost", "Ginnungagap", "Valhalla", "Folkvangr", "Hlidskjalf", "Mjolnir", 
     "Gjallarhorn", "Brisingamen", "Draupnir", "Gungnir", "Skidbladnir", 
-    "Naglfar", "Laevateinn", "Andvaranaut", "Horn", "Rings", "Runes", "Seidr", 
-    "Saga", "Ragnarok",
+    "Naglfar", "Laevateinn", "Andvaranaut", "Runes", "Seidr", "Ragnarok",
 ]
 
 
@@ -513,13 +512,13 @@ german_rivers = [
 
 # Cute animals
 cute_animals = [
-    "Kitten", "Bunny", "Hedgehog", "Hamster", "Chinchilla", "Ferret",
-    "Guineapig", "Parakeet", "Parrot", "Duckling", "Gosling", "Foal",
-    "Piglet", "Calf", "Lamb", "Fawn", "Otter", "Meerkat",
+    "Kitten", "Bunny", "Hedgehog", "Chinchilla", "Ferret",
+    "Parakeet", "Duckling", "Gosling", "Foal",
+    "Piglet", "Lamb", "Fawn", "Otter", "Meerkat",
     "Koala", "Panda", "Squirrel", "Chipmunk", "Alpaca",
     "Penguin", "Seaotter", "Kinkajou", "Sugarglider", "Echidna", 
-    "Platypus", "Hedgie", "Quokka", "Pika", "Manatee", "Lemur", "Mouse", 
-    "Cockatiel", "Foalhorse", "Otterpup", "Cub", "Koalajoey"
+    "Platypus", "Hedgie", "Quokka", "Pika", "Lemur", "Mouse", 
+    "Cockatiel", "Otterpup", "Cub", "Koalajoey"
 ]
 
 # Adjectives
@@ -633,18 +632,11 @@ heraldic_animals = [
 
 
 ancient_battles = [
-    "Megiddo",       # 15th c. BCE, Egypt vs Canaan
-    "Kadesh",        # 1274 BCE, Egypt vs Hittites
     "Marathon",      # 490 BCE, Greeks vs Persians
     "Thermopylae",   # 480 BCE, Spartans vs Persians
     "Salamis",       # 480 BCE, Greeks vs Persians
     "Plataea",       # 479 BCE, Greeks vs Persians
-    "Mycale",        # 479 BCE, Greeks vs Persians
-    "Leuctra",       # 371 BCE, Thebes vs Sparta
-    "Chaeronea",     # 338 BCE, Philip II vs Greek states
-    "Issus",         # 333 BCE, Alexander vs Darius III
     "Gaugamela",     # 331 BCE, Alexander vs Persians
-    "Hydaspes",      # 326 BCE, Alexander vs King Porus
     "Zama",          # 202 BCE, Rome vs Carthage
     "Cannae",        # 216 BCE, Hannibal vs Rome
     "Trebia",        # 218 BCE, Hannibal vs Rome
@@ -673,11 +665,6 @@ medieval_battles = [
     "Manzikert",         # 1071, Byzantines vs Seljuk Turks
     "Hattin",            # 1187, Saladin vs Crusaders
     "Arsuf",             # 1191, Richard I vs Saladin
-    "Bouvines",          # 1214, France vs Holy Roman Empire
-    "Las Navas de Tolosa", # 1212, Reconquista
-    "Legnica",           # 1241, Mongols vs Poland
-    "Mohi",              # 1241, Mongols vs Hungary
-    "Ain Jalut",         # 1260, Mamluks vs Mongols
     "Stirling Bridge",   # 1297, Scots vs England
     "Falkirk",           # 1298, Edward I vs Scots
     "Bannockburn",       # 1314, Robert the Bruce vs Edward II
@@ -693,8 +680,6 @@ medieval_battles = [
     "Barnet",            # 1471, Wars of the Roses
     "Bosworth Field",    # 1485, Wars of the Roses
     "Fornovo",           # 1495, France vs Holy League
-    "Novara",            # 1513, Swiss vs France (slightly post-medieval)
-    "Pavia",             # 1525, France vs Spain (early Renaissance)
 ]
 
 
